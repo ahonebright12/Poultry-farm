@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ChickConnect connects chicken farmers with customers." />
+    <title>ChickConnect | Fresh Chicken, Direct from Farmers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="ChickConnect home">
+        <span class="brand-mark">C</span>
+        <span>Chick<span>Connect</span></span>
+      </a>
+
+      <button type="button" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#farmers" class="nav-link">For Farmers</a>
+        <a href="#buyers" class="nav-link">For Buyers</a>
+        <a href="#about" class="nav-link">About Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" aria-label="Search">⌕</button>
+        <a href="#login" class="login-link">Login</a>
+        <a href="#signup" class="btn btn-primary btn-small">Sign Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page active" id="home">
+        <div class="hero section-wrap">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span>Farmers</span>
+              <b>✦</b>
+              <span>Customers</span>
+              <b>✦</b>
+              <span>A stronger chicken market</span>
+            </div>
+
+            <h1>Fresh Chicken.<br /><span>Direct</span> from Farmers to You.</h1>
+            <p class="lead">
+              Buy quality chickens from trusted farmers, order with ease, and enjoy safe and
+              reliable delivery — all in one place.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#shop">Shop Now <span>→</span></a>
+              <a class="btn btn-outline" href="#farmers">Become a Farmer</a>
+            </div>
+
+            <div class="trust-row">
+              <div class="trust-item">
+                <i>✓</i>
+                <div>
+                  <b>Verified Farmers</b>
+                  <small>Trusted &amp; checked</small>
+                </div>
+              </div>
+              <div class="trust-item">
+                <i>♢</i>
+                <div>
+                  <b>Secure Ordering</b>
+                  <small>Safe &amp; easy</small>
+                </div>
+              </div>
+              <div class="trust-item">
+                <i>♡</i>
+                <div>
+                  <b>Fair Prices</b>
+                  <small>Direct from farmers</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1100&q=85"
+              alt="Healthy chickens on a farm"
+            />
+            <div class="floating-note note-top">
+              Healthy Chickens<br />
+              <strong>Happy Families ♥</strong>
+            </div>
+            <div class="floating-note note-bottom">
+              <span>✦</span>
+              <strong>Support<br />Local Farmers</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="how section-wrap">
+          <div class="section-heading">
+            <div>
+              <span class="kicker">Simple. Safe. Convenient.</span>
+              <h2>How ChickConnect Works</h2>
+              <p>Getting fresh chicken is simple and secure.</p>
+            </div>
+            <a href="#about" class="text-link">Learn more →</a>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step">
+              <span class="step-icon">⌕</span>
+              <b>1. Browse</b>
+              <p>Explore verified farmers and their available chickens.</p>
+            </article>
+            <article class="step">
+              <span class="step-icon">▣</span>
+              <b>2. Order</b>
+              <p>Choose your preferred chicken, quantity and place your order.</p>
+            </article>
+            <article class="step">
+              <span class="step-icon">♧</span>
+              <b>3. Pay Securely</b>
+              <p>Review your order and choose a payment option when available.</p>
+            </article>
+            <article class="step">
+              <span class="step-icon">✓</span>
+              <b>4. Receive</b>
+              <p>Get your order delivered or arrange pickup with the farmer.</p>
+            </article>
+          </div>
+        </div>
+
+        <section class="feature-band section-wrap">
+          <div>
+            <span class="kicker">Fresh from our farms</span>
+            <h2>Good food starts<br />with good farming.</h2>
+            <p>Meet local chicken farmers and discover fresh, carefully raised products.</p>
+            <a href="#shop" class="btn btn-primary">Explore chickens →</a>
+          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=900&q=85"
+            alt="Free range chickens"
+          />
+        </section>
+      </section>
+
+      <section class="page section-wrap" id="shop">
+        <div class="page-heading">
+          <div>
+            <span class="kicker">Fresh picks from local farms</span>
+            <h1>Shop <span>Chicken</span></h1>
+            <p>Find quality chicken from farmers you can trust.</p>
+          </div>
+
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="product-search" type="search" placeholder="Search chicken or farmer..." />
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <button type="button" class="filter active" data-filter="All">All chickens</button>
+          <button type="button" class="filter" data-filter="Broiler">Broilers</button>
+          <button type="button" class="filter" data-filter="Local">Local chicken</button>
+          <button type="button" class="filter" data-filter="Layer">Layers</button>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-type="Broiler" data-name="broiler chicken ferme des aigles">
+            <img
+              src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=700&q=80"
+              alt="Broiler chickens"
+            />
+            <div class="product-info">
+              <span class="verified">✓ Verified farmer</span>
+              <h3>Broiler Chicken</h3>
+              <p class="muted">Ferme des Aigles · Douala</p>
+              <div class="rating">★★★★★ <small>(42 reviews)</small></div>
+              <div class="product-bottom">
+                <strong>2,500 FCFA <small>/ kg</small></strong>
+                <button type="button" class="add-btn" data-product="Broiler Chicken">Add +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-type="Local" data-name="local chicken la ferme royale">
+            <img
+              src="https://images.unsplash.com/photo-1553106910-1b7b4b7a7f3c?auto=format&fit=crop&w=700&q=80"
+              alt="Local chickens"
+            />
+            <div class="product-info">
+              <span class="verified">✓ Verified farmer</span>
+              <h3>Local Chicken</h3>
+              <p class="muted">La Ferme Royale · Bonabéri</p>
+              <div class="rating">★★★★★ <small>(27 reviews)</small></div>
+              <div class="product-bottom">
+                <strong>4,000 FCFA <small>/ piece</small></strong>
+                <button type="button" class="add-btn" data-product="Local Chicken">Add +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-type="Broiler" data-name="broiler chicken chicken plus">
+            <img
+              src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=700&q=80"
+              alt="Farm chickens"
+            />
+            <div class="product-info">
+              <span class="verified">✓ Verified farmer</span>
+              <h3>Broiler Chicken</h3>
+              <p class="muted">Chicken Plus · Yabassi</p>
+              <div class="rating">★★★★★ <small>(18 reviews)</small></div>
+              <div class="product-bottom">
+                <strong>2,600 FCFA <small>/ kg</small></strong>
+                <button type="button" class="add-btn" data-product="Broiler Chicken">Add +</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-type="Layer" data-name="healthy laying hens">
+            <img
+              src="https://images.unsplash.com/photo-1569288052389-dac9b01ac5c8?auto=format&fit=crop&w=700&q=80"
+              alt="Brown hens"
+            />
+            <div class="product-info">
+              <span class="verified">✓ Verified farmer</span>
+              <h3>Healthy Layers</h3>
+              <p class="muted">Green Valley Farm · Buea</p>
+              <div class="rating">★★★★☆ <small>(16 reviews)</small></div>
+              <div class="product-bottom">
+                <strong>5,500 FCFA <small>/ piece</small></strong>
+                <button type="button" class="add-btn" data-product="Healthy Layers">Add +</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="cart-status" id="cart-status">Your basket is empty.</p>
+      </section>
+
+      <section class="page section-wrap" id="farmers">
+        <div class="split-page">
+          <div>
+            <span class="kicker">Grow your farm business</span>
+            <h1>More customers.<br /><span>More opportunities.</span></h1>
+            <p class="lead">
+              ChickConnect helps chicken farmers showcase their products, connect with buyers,
+              and grow their businesses with confidence.
+            </p>
+            <ul class="check-list">
+              <li>Showcase your chicken products online</li>
+              <li>Reach customers beyond your neighbourhood</li>
+              <li>Manage enquiries and orders in one place</li>
+              <li>Build trust with a verified farmer profile</li>
+            </ul>
+            <a href="#signup" class="btn btn-primary">Join as a Farmer →</a>
+          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1000&q=85"
+            alt="Chickens at a local farm"
+          />
+        </div>
+      </section>
+
+      <section class="page section-wrap" id="buyers">
+        <div class="split-page buyer">
+          <img
+            src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=1000&q=85"
+            alt="Fresh farm chickens"
+          />
+          <div>
+            <span class="kicker">A better way to buy</span>
+            <h1>Find fresh chicken,<br /><span>without the hassle.</span></h1>
+            <p class="lead">
+              Discover local farmers, compare products and connect directly with the people who
+              raise your chicken.
+            </p>
+            <ul class="check-list">
+              <li>Browse different chicken types</li>
+              <li>Compare prices and farmer reviews</li>
+              <li>Contact farmers before ordering</li>
+              <li>Keep track of your orders</li>
+            </ul>
+            <a href="#shop" class="btn btn-primary">Start shopping →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page section-wrap" id="about">
+        <div class="about-intro">
+          <span class="kicker">About ChickConnect</span>
+          <h1>Connecting chicken farmers<br /><span>to every customer.</span></h1>
+          <p class="lead">
+            We are building a trusted digital marketplace focused on making it easier for chicken
+            farmers to reach customers and for customers to find fresh chicken from reliable local
+            sources.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <article>
+            <i>✓</i>
+            <h3>Verified Farmers</h3>
+            <p>We want buyers to connect with trusted chicken farmers.</p>
+          </article>
+          <article>
+            <i>♡</i>
+            <h3>Fresh &amp; Quality</h3>
+            <p>Helping customers discover quality chicken products.</p>
+          </article>
+          <article>
+            <i>♧</i>
+            <h3>Local Support</h3>
+            <p>Creating more visibility and opportunities for local farms.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page section-wrap account-page" id="login">
+        <div class="account-card">
+          <div class="brand">
+            <span class="brand-mark">C</span>
+            <span>Chick<span>Connect</span></span>
+          </div>
+          <h2>Welcome back</h2>
+          <p>Log in to continue to your account.</p>
+
+          <label>
+            Email address
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Enter your password" />
+          </label>
+
+          <button type="button" class="btn btn-primary full-width" id="login-btn">Login</button>
+          <p class="form-note" id="login-note">Prototype only — account login will be connected later.</p>
+          <p>New to ChickConnect? <a href="#signup">Create an account</a></p>
+        </div>
+      </section>
+
+      <section class="page section-wrap account-page" id="signup">
+        <div class="account-card">
+          <div class="brand">
+            <span class="brand-mark">C</span>
+            <span>Chick<span>Connect</span></span>
+          </div>
+          <h2>Create your account</h2>
+          <p>Join the ChickConnect community.</p>
+
+          <label>
+            Full name
+            <input type="text" placeholder="Your full name" />
+          </label>
+          <label>
+            Email address
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            I am a
+            <select>
+              <option>Customer</option>
+              <option>Chicken farmer</option>
+            </select>
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Create a password" />
+          </label>
+
+          <button type="button" class="btn btn-primary full-width" id="signup-btn">Create Account</button>
+          <p class="form-note" id="signup-note">Prototype only — registration will be connected later.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="brand" href="#home">
+          <span class="brand-mark">C</span>
+          <span>Chick<span>Connect</span></span>
+        </a>
+        <p>Real farmers. Fresh chicken. Stronger communities.</p>
+        <div class="footer-links">
+          <a href="#shop">Shop</a>
+          <a href="#farmers">For Farmers</a>
+          <a href="#buyers">For Buyers</a>
+          <a href="#about">About Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ChickConnect. All rights reserved.</span>
+        <span>Made to support local chicken farmers.</span>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

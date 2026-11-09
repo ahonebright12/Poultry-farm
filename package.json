@@ -1,0 +1,8 @@
+{
+  "name": "chickconnect-light-prototype",
+  "version": "1.0.0",
+  "description": "A light, responsive ChickConnect website prototype",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node server.js" },
+  "dependencies": { "express": "^4.21.2" }
+}
