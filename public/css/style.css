@@ -953,3 +953,385 @@ h2 {
     align-items: flex-start;
   }
 }
+
+
+
+/* AUTHENTICATION PAGES */
+
+.auth-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    background: #f1f6eb;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.auth-card .logo {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.auth-card h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.auth-card > p {
+    color: #777;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-card label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.auth-card input {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+.auth-card input:focus {
+    border-color: #76a65a;
+}
+
+.auth-card button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.auth-message {
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.auth-card .auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #76a65a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*sell design*/
+
+
+/* SELL CHICKEN PAGE */
+
+.sell-section {
+    min-height: 90vh;
+    padding: 50px 20px;
+    background: #f7faf7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sell-card {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.sell-card h1 {
+    color: #244b35;
+    margin-bottom: 10px;
+}
+
+.sell-card > p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.sell-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sell-card label {
+    margin: 15px 0 7px;
+    font-weight: 600;
+    color: #333;
+}
+
+.sell-card input,
+.sell-card textarea,
+.sell-card select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.sell-card input:focus,
+.sell-card textarea:focus,
+.sell-card select:focus {
+    outline: none;
+    border-color: #4b8b5c;
+}
+
+.sell-button {
+    margin-top: 25px;
+    padding: 14px;
+    background: #347a49;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sell-button:hover {
+    background: #245d36;
+}
+
+#sellMessage {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+
+.sell-button {
+    display: inline-block;
+    background-color: #347a49;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.sell-button:hover {
+    background-color: #245d36;
+}
+
+/*Register page design*/
+
+
+
+/* CHICKCONNECT AUTHENTICATION DESIGN */
+
+.auth-page {
+    margin: 0;
+    min-height: 100vh;
+    background: #EDE5FA;
+    font-family: Arial, sans-serif;
+    color: #393044;
+}
+
+/* Navigation */
+
+.auth-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+}
+
+.auth-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #19181b;
+    text-decoration: none;
+}
+
+.auth-logo span {
+    color: #7652B8;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #7652B8;
+    font-weight: 600;
+}
+
+/* Main section */
+
+.auth-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 50px;
+}
+
+/* Form card */
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: #FFFFFF;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(90, 65, 130, 0.10);
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.auth-heading h1 {
+    font-size: 27px;
+    color: #7652B8;
+    margin-bottom: 10px;
+}
+
+.auth-heading p {
+    color: #898191;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Form fields */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #E3DCEF;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: #FFFFFF;
+}
+
+.form-group input:focus {
+    border-color: #7652B8;
+    box-shadow: 0 0 0 3px rgba(118, 82, 184, 0.12);
+}
+
+/* Button */
+
+.auth-button {
+    width: 100%;
+    padding: 14px;
+    background: #7652B8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.auth-button:hover {
+    background: #7652B8;
+}
+
+/* Footer */
+
+.auth-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #898191;
+}
+
+.auth-footer a {
+    color: #7652B8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-footer a:hover,
+.back-home:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .auth-card {
+        padding: 25px 20px;
+    }
+
+    .auth-navbar {
+        padding: 18px 5%;
+    }
+
+    .auth-heading h1 {
+        font-size: 23px;
+    }
+}
+
+.auth-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #FFFFFF;
+    gap: 30px;
+}
+
+.auth-logo {
+    flex-shrink: 0;
+    margin-right: auto;
+}
+
+.auth-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.auth-nav-links a {
+    white-space: nowrap;
+}
+
+

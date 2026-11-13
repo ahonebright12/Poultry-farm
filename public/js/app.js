@@ -51,3 +51,5 @@ document.getElementById("product-search").addEventListener("input", event => {
 });
 document.getElementById("login-btn").addEventListener("click", () => notify("Login will be connected in the next development stage."));
 document.getElementById("signup-btn").addEventListener("click", () => notify("Registration will be connected in the next development stage."));
+
+

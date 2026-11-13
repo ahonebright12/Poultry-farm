@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Chicken | ChickConnect</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">ChickConnect</a>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="sell-section">
+        <div class="sell-card">
+            <h1>Sell Your Chicken</h1>
+            <p>Share your chicken products with customers on ChickConnect.</p>
+
+            <form id="sellForm">
+
+                <label for="title">Listing Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder="e.g. Healthy broiler chickens for sale"
+                    required
+                >
+
+                <label for="description">Description</label>
+                <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Describe your chickens..."
+                    rows="4"
+                ></textarea>
+
+                <label for="chicken_type">Chicken Type</label>
+                <select id="chicken_type" name="chicken_type" required>
+                    <option value="">Select chicken type</option>
+                    <option value="Broiler">Broiler</option>
+                    <option value="Layer">Layer</option>
+                    <option value="Local Chicken">Local Chicken</option>
+                    <option value="Noiler">Noiler</option>
+                    <option value="Day-old Chicks">Day-old Chicks</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="quantity">Quantity Available</label>
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    placeholder="e.g. 50"
+                    required
+                >
+
+                <label for="price">Price per Chicken (FCFA)</label>
+                <input
+                    type="number"
+                    id="price"
+                    name="price"
+                    min="1"
+                    placeholder="e.g. 5000"
+                    required
+                >
+
+                <label for="location">Your Location</label>
+                <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="e.g. Douala, Cameroon"
+                    required
+                >
+
+                <label for="image">Chicken Image URL (optional)</label>
+                <input
+                    type="url"
+                    id="image"
+                    name="image"
+                    placeholder="Paste an image URL"
+                >
+
+                <button type="submit" class="sell-button">
+                    Publish Listing
+                </button>
+
+                <p id="sellMessage" role="status"></p>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="js/sell.js"></script>
+</body>
+</html>
