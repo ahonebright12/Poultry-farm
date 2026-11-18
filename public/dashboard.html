@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,53 +8,228 @@
     <title>Dashboard | ChickConnect</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="dashboard-page">
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                Chick<span>Connect</span>
-            </a>
+    <div class="dashboard-layout">
 
-            <div class="nav-actions">
-                <button class="register" id="logoutBtn">
-                    Logout
-                </button>
+        <!-- SIDEBAR -->
+        <aside class="dashboard-sidebar">
+
+            <a class="brand" href="#home" aria-label="ChickConnect home">
+        <span class="brand-mark">C</span>
+        <span>Chick<span>Connect</span></span>
+      </a>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="sidebar-link active">
+                    <span>⌂</span> Dashboard
+                </a>
+
+                <a href="index.html#shop" class="sidebar-link">
+                    <span>🛒</span> Browse Chicken
+                </a>
+
+                <a href="#orders" class="sidebar-link">
+                    <span>▤</span> My Orders
+                </a>
+
+                <a href="#listings" class="sidebar-link">
+                    <span>▧</span> My Listings
+                </a>
+
+                <a href="#messages" class="sidebar-link">
+                    <span>✉</span> Messages
+                </a>
+
+                <a href="#favorites" class="sidebar-link">
+                    <span>♡</span> Favorites
+                </a>
+
+                <a href="#settings" class="sidebar-link">
+                    <span>⚙</span> Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-profile">
+                <div class="profile-avatar">C</div>
+                <div>
+                    <strong id="sidebarUserName">My Account</strong>
+                    <small>ChickConnect Member</small>
+                </div>
             </div>
-        </nav>
-    </header>
 
-    <main style="padding: 50px 7%;">
-        <h1>Welcome, <span id="userName">User</span>!</h1>
+            <button class="sidebar-logout" id="logoutBtn">
+                ↪ Logout
+            </button>
 
-        <p style="margin: 15px 0 30px; color: #777;">
-            Welcome to your ChickConnect marketplace dashboard.
-        </p>
+        </aside>
 
-        <div class="benefits">
-            <div>
-                <h3>My Purchases</h3>
-                <p>Manage chicken orders you have placed.</p>
-            </div>
+        <!-- MAIN CONTENT -->
+        <main class="dashboard-main">
 
-            <div>
-                <h3>My Listings</h3>
-                <p>Manage chicken products you have listed.</p>
-            </div>
+            <!-- TOP BAR -->
+            <header class="dashboard-topbar">
+                <div class="dashboard-search">
+                    <span>⌕</span>
+                    <input type="search"
+                           placeholder="Search for chicken, farmers...">
+                </div>
 
-            
-<section class="dashboard-card">
-    <h2>Sell Chicken</h2>
-    <p>Start selling your chicken on ChickConnect.</p>
+                <div class="dashboard-top-actions">
+                    <button class="notification-btn" aria-label="Notifications">
+                        ♧
+                    </button>
+                    <div class="top-avatar">C</div>
+                </div>
+            </header>
 
-    <a href="sell.html" class="sell-button">
-        + Create Listing
-    </a>
-</section>
+            <!-- WELCOME BANNER -->
+            <section class="dashboard-welcome">
+                <div class="welcome-content">
+                    <span class="welcome-label">YOUR CHICKCONNECT ACCOUNT</span>
 
-            </div>
-        </div>
-    </main>
+                    <h1>Good day, <span id="userName">User</span>!</h1>
+
+                    <p>
+                        Discover fresh chicken, connect with trusted farmers
+                        and manage your marketplace activities.
+                    </p>
+
+                    <a href="index.html#shop" class="welcome-button">
+                        Browse Chicken →
+                    </a>
+                </div>
+
+                <div class="welcome-decoration">
+                    C
+                    <span>Fresh Quality<br>Trusted Farms</span>
+                </div>
+            </section>
+
+            <!-- STATISTICS -->
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+                    <div class="stat-icon">▤</div>
+                    <p>My Orders</p>
+                    <h2>0</h2>
+                    <small>View your purchases</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">▧</div>
+                    <p>My Listings</p>
+                    <h2>0</h2>
+                    <small>Manage your chickens</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">♡</div>
+                    <p>Favorites</p>
+                    <h2>0</h2>
+                    <small>Saved chickens</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">✉</div>
+                    <p>Messages</p>
+                    <h2>0</h2>
+                    <small>Your conversations</small>
+                </article>
+
+            </section>
+
+            <!-- QUICK ACTIONS -->
+            <section class="dashboard-section">
+                <div class="dashboard-section-heading">
+                    <div>
+                        <h2>Quick Actions</h2>
+                        <p>What would you like to do today?</p>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+
+                    <a href="index.html#shop" class="quick-action-card">
+                        <div class="quick-action-icon">🛒</div>
+                        <h3>Browse Chicken</h3>
+                        <p>Discover chickens from local farmers.</p>
+                        <span>Explore Marketplace →</span>
+                    </a>
+
+                    <a href="sell.html" class="quick-action-card">
+                        <div class="quick-action-icon">＋</div>
+                        <h3>Sell Chicken</h3>
+                        <p>Publish your chicken listing for customers.</p>
+                        <span>Create Listing →</span>
+                    </a>
+
+                    <a href="#orders" class="quick-action-card">
+                        <div class="quick-action-icon">📦</div>
+                        <h3>My Orders</h3>
+                        <p>Keep track of your purchases.</p>
+                        <span>View Orders →</span>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- RECENT ACTIVITY -->
+            <section class="dashboard-section dashboard-bottom">
+
+                <div class="activity-panel" id="orders">
+                    <div class="dashboard-section-heading">
+                        <div>
+                            <h2>Recent Orders</h2>
+                            <p>Keep track of your latest purchases.</p>
+                        </div>
+                        <a href="#orders">View All</a>
+                    </div>
+
+                    <div class="empty-state">
+                        <div>📦</div>
+                        <h3>No orders yet</h3>
+                        <p>Your chicken purchases will appear here.</p>
+                        <a href="index.html#shop">Start Shopping</a>
+                    </div>
+                </div>
+
+                <div class="activity-panel" id="listings">
+                    <div class="dashboard-section-heading">
+                        <div>
+                            <h2>My Listings</h2>
+                            <p>Manage the chickens you are selling.</p>
+                        </div>
+                        <a href="sell.html">Add New +</a>
+                    </div>
+
+                    <div id="myListingsContainer" class="my-listings-container">
+    <p class="listings-loading">Loading your listings...</p>
+</div>
+                        <h3>No listings yet</h3>
+                        <p>Your published chicken listings will appear here.</p>
+                        <a href="sell.html">Create Listing</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SUPPORT BANNER -->
+            <section class="dashboard-support" id="messages">
+                <div class="support-icon">🎧</div>
+                <div>
+                    <h2>Need Help?</h2>
+                    <p>We're here to help you enjoy your ChickConnect experience.</p>
+                </div>
+                <a href="mailto:support@chickconnect.com">Contact Support →</a>
+            </section>
+
+            <footer class="dashboard-footer">
+                © 2026 ChickConnect. Connecting chicken farmers to customers.
+            </footer>
+
+        </main>
+    </div>
 
     <script src="js/dashboard.js"></script>
 </body>

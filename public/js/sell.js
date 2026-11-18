@@ -3,15 +3,12 @@
 const sellForm = document.getElementById('sellForm');
 const sellMessage = document.getElementById('sellMessage');
 
-// Get the token using the correct storage key
 const token = localStorage.getItem('chickconnect_token');
 
-// Check login status
 if (!token) {
     window.location.href = 'login.html';
 }
 
-// Handle listing submission
 sellForm.addEventListener('submit', async function (event) {
     event.preventDefault();
 
@@ -30,18 +27,33 @@ sellForm.addEventListener('submit', async function (event) {
             body: JSON.stringify(listingData)
         });
 
-        const data = await response.json();
+        // Read the response as text first
+        const responseText = await response.text();
+
+        console.log('Server response:', responseText);
+
+        // Convert response to JSON
+        let data;
+
+        try {
+            data = JSON.parse(responseText);
+        } catch {
+            throw new Error(
+                'The server returned HTML instead of JSON. Check your API route in server.js.'
+            );
+        }
 
         if (!response.ok) {
             throw new Error(data.message || 'Unable to publish listing.');
         }
 
-        sellMessage.textContent = data.message;
+        sellMessage.textContent = data.message || 'Listing published successfully!';
         sellMessage.style.color = 'green';
 
         sellForm.reset();
 
     } catch (error) {
+        console.error('Publishing error:', error);
         sellMessage.textContent = error.message;
         sellMessage.style.color = 'red';
     }

@@ -190,7 +190,6 @@ function authenticateToken(req, res, next) {
     });
 }
 
-
 // CREATE A CHICKEN LISTING
 app.post('/api/listings', authenticateToken, async (req, res) => {
     try {
@@ -222,44 +221,6 @@ app.post('/api/listings', authenticateToken, async (req, res) => {
                 message: 'Quantity and price must be greater than zero.'
             });
         }
-
-
-// GET ALL AVAILABLE CHICKEN LISTINGS
-app.get('/api/listings', async (req, res) => {
-    try {
-        const [listings] = await db.query(`
-            SELECT
-                listings.id,
-                listings.title,
-                listings.description,
-                listings.chicken_type,
-                listings.quantity,
-                listings.price,
-                listings.location,
-                listings.image,
-                listings.created_at,
-                users.full_name AS seller_name,
-                users.phone AS seller_phone
-            FROM listings
-            JOIN users ON listings.user_id = users.id
-            WHERE listings.status = 'available'
-            ORDER BY listings.created_at DESC
-        `);
-
-        res.json({
-            success: true,
-            listings: listings
-        });
-
-    } catch (error) {
-        console.error('Marketplace Error:', error);
-
-        res.status(500).json({
-            message: 'Unable to load chicken listings.'
-        });
-    }
-});
-
 
         // Save listing in MySQL
         const [result] = await db.query(
@@ -293,6 +254,35 @@ app.get('/api/listings', async (req, res) => {
         });
     }
 });
+
+
+// GET LISTINGS CREATED BY THE LOGGED-IN USER
+app.get('/api/my-listings', authenticateToken, async (req, res) => {
+    try {
+        const [listings] = await db.query(
+            `SELECT id, title, description, chicken_type,
+                    quantity, price, location, image, status, created_at
+             FROM listings
+             WHERE user_id = ?
+             ORDER BY created_at DESC`,
+            [req.user.id]
+        );
+
+        res.json({
+            success: true,
+            listings: listings
+        });
+
+    } catch (error) {
+        console.error('My Listings Error:', error);
+
+        res.status(500).json({
+            success: false,
+            message: 'Unable to load your listings.'
+        });
+    }
+});
+
 
 
 
